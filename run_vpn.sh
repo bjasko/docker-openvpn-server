@@ -19,6 +19,6 @@ docker rm -f  $CT_NAME
 docker run -d \
       --privileged  --net=host -d \
       -v $VOLUME_BASE/etc/openvpn:/etc/openvpn \
-      --name $CT_NAME \ 
+      --name $CT_NAME \
       -p $S_HOST_IP:1194:1194/udp  \
       openvpn-server
