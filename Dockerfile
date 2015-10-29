@@ -3,7 +3,7 @@ MAINTAINER Jasmin Beganović <bjasko@bring.out.ba>
 
   
 RUN apt-get update -q
-RUN apt-get install -qy openvpn iptables
+RUN apt-get install -qy sendxmpp openvpn iptables
 
 VOLUME  ["/etc/openvpn"]
 
